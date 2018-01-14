@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单管理</title>
+    <script src="../lib/jquery-1.7.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../files/all/business.js"></script>
+    <link href="../files/all/style.css" type="text/css" rel="stylesheet">
+    <link href="../files/all/table.css" type="text/css" rel="stylesheet">
+    <script src="../files/order_manage/order_info.js"></script>
+</head>
+<body >
+<!-- 顶部 -->
+<div id="top">
+    <!-- 黑条 -->
+    <div style="height: 30px;background-color: black;text-align: right">
+        <!-- 登录状态 -->
+        <div id="status" style="color: white;padding: 8px">
+            管理员已登入 &nbsp;|&nbsp; <span id="logout" style="cursor: pointer;">退出</span>&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div class="box" style="height: 80px;">
+        <!-- logo -->
+        <div style="width: 200px;text-align: center;float: left;">
+            <h2 style="margin-top: 10px;margin-bottom: 0px">
+                <span style="color: crimson;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0px">book store</h3>
+        </div>
+        <!-- 导航栏 -->
+        <div style="float: left;margin-left: 150px;margin-top: 30px;">
+            <a id="home">首页</a>
+            <a id="catalogManage">目录管理</a>
+            <a id="goodsManage">商品管理</a>
+            <a id="orderManage">订单管理</a>
+            <a id="saleManage">销售量统计</a>
+            <a id="userManage">会员管理</a>
+        </div>
+    </div>
+</div>
+
+<!-- 内容 -->
+<div id="content" class="box">
+    <!-- 灰条 -->
+    <div style="background-color: gainsboro;padding: 2px;padding-left: 20px;border-bottom: 1px solid grey">
+        订单管理
+    </div>
+
+    <!-- 红字 -->
+    <h4 class="bigRed">订单详细信息</h4>
+    <!-- 虚线 -->
+    <img class="dashed" src="../image/u41.png">
+
+    <div>
+        <p align="center">基础信息</p>
+        <table style="width: auto" align="center">
+            <p>
+                <tr>
+                    <th class="firstth" id="orderid">订单号</th>
+                    <th class="firstth" id="userid">客户号</th>
+                    <th class="firstth" id="ordertime">下单时间</th>
+                </tr>
+            </p>
+            <p>
+                <tr>
+                    <th class="firstth">支付方式</th>
+                    <th class="secondth">货到付款</th>
+                    <th class="firstth" id="price">订单金额</th>
+                    <th class="firstth" id="orderstatus">订单状态</th>
+                </tr>
+            </p>
+            <p>
+                <tr>
+                    <th class="firstth" id="consignee">收货人</th>
+                    <th class="firstth" id="phone">收货人手机</th>
+                    <th class="firstth" id="address">收货人地址</th>
+                </tr>
+            </p>
+        </table>
+    </div>
+
+    <div>
+        <p align="center">商品信息</p>
+        <table style="width: auto" align="center" class="gridtable">
+            <thead>
+            <tr>
+                <th>名称</th>
+                <th>价格</th>
+                <th>数量</th>
+            </tr>
+            </thead>
+            <tbody id="goods">
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <p align="center">
+            <input id="pass" type="button" value="通过审核" style="width: 100px;display: none;">
+            <input id="cancel" type="button" value="取消订单" style="margin-left: 30px;width: 100px;display: none;">
+            <input type="button" value="返回" onclick="history.back()" style="margin-left: 30px;width: 100px;">
+        </p>
+    </div>
+
+</div>
+
+<!-- 底部 -->
+<div id="bottom">
+    <img src="../image/u23.png" width="1000" >
+    <div style="background-color: #3e3e3e;height: 200px;margin-top: -15px;">
+        <!-- logo 邮箱 -->
+        <div style="color: white;padding-left: 150px;padding-top: 20px;">
+            <h2 style="margin-top: 10px;margin-bottom: 0">
+                <span style="color: crimson;margin-left: 10px;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0">book store</h3>
+            电子邮件：1@mail.com
+        </div>
+    </div>
+    <!-- 版权 -->
+    <div style="background-color: black;height: 40px;color: white;padding-left: 100px;padding-top: 10px">
+        版权所有 © 2017-2017，clw项目小组
+    </div>
+</div>
+</body>
+</html>

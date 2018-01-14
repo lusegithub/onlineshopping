@@ -1,0 +1,20 @@
+#editGoods div {
+    display: table;
+    margin-top: 10px;
+}
+.left {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100px;
+    text-align: right;
+}
+.middle{
+    width: 450px;
+    float: left;
+}
+.right {
+    width: 200px;
+    color: red;
+    float: left;
+}

@@ -1,0 +1,108 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+}
+.box{
+    border: 1px solid gray;
+}
+#top a {
+    margin: 10px;
+    cursor: pointer;
+}
+#content {
+    display: table;
+    margin-top: 10px;
+    min-height: 400px;
+    width: 1000px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+} 
+#content .bigRed {
+    text-align: center;
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#content .dashed {
+    margin-left: -2px;
+    margin-bottom: 5px
+}
+#left{
+    margin:2px;
+    width:18%;
+    color: gray;
+    float: left;
+    background-color: #c2c2c2;
+}
+#right{
+    margin:2px;
+    width:80%;
+    float: right;
+}
+#right dl{
+    margin: 25px 8px;
+}
+#right dl dt img{
+    margin: 0px 1px;
+    width:180px;
+    height: 180px;
+}
+
+#loginInput{
+    text-align: center;
+}
+#firstLine{
+    margin: 0 auto;
+    padding: 70px 20px 20px 20px;
+    width: 400px;
+}
+#secondLine{
+    margin: 0 auto;
+    padding: 20px;
+    width: 400px;
+}
+#L1,#L2{
+    float:left;
+    width: 140px;
+    height: 25px;
+}
+#L12,#L22{
+    float: left;
+}
+#submitButton{
+    padding-top: 50px;
+    text-align: center;
+}
+#login,#rewrite{
+    margin: 0 auto;
+}
+
+#home:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#credit_query:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#item_search:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#favorite:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#cart_list:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#trade_query:hover{
+    color:rebeccapurple;
+    text-decoration: underline;
+}
+#goods_send:hover{
+    color:rebeccapurple;
+    text-decoration: underline;
+}

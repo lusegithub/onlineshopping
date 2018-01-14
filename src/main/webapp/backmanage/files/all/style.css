@@ -1,0 +1,26 @@
+body {
+    margin: 0 auto;
+    width: 1000px;
+}
+.box{
+    border: 1px solid gray;
+}
+#top a {
+    margin: 10px;
+    cursor: pointer;
+}
+#content {
+    margin-top: 10px;
+    min-height: 400px;
+    padding-bottom: 50px;
+}
+#content .bigRed {
+    text-align: center;
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#content .dashed {
+    margin-left: -2px;
+    margin-bottom: 5px
+}

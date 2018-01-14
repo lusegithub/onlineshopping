@@ -1,0 +1,65 @@
+.bigRed {
+    text-align: center;
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#u1510 p span:hover{
+    cursor:pointer;
+}
+
+#u1514 p span:hover{
+    cursor:pointer;
+}
+
+#u1516 p span:hover{
+    cursor:pointer;
+}
+
+#u1518 p span:hover{
+    cursor:pointer;
+}
+
+#u1691 p span:hover{
+    cursor:pointer;
+}
+
+#u1693 p span:hover{
+    cursor:pointer;
+}
+
+#u1695 p span:hover{
+    cursor:pointer;
+}
+
+#u1697 p span:hover{
+    cursor:pointer;
+}
+
+#doublehead1{
+    width: 1000px;
+}
+
+
+#doublehead2{
+    width: 1000px;
+}
+
+#sum_01 {
+  position: absolute;
+  width: 1000px;
+  top: 110px;
+  left: 169px;
+}
+table{
+    margin: 0 auto;
+    width: 950px;
+    border:2px solid #aaa;
+    border-collapse:collapse;
+}
+table tr td{
+    text-align: center;
+    border: 2px solid #aaa;
+    padding: 5px;
+}

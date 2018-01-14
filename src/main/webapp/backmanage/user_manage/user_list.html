@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员管理</title>
+    <script src="../lib/jquery-1.7.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../files/all/business.js"></script>
+    <link href="../files/all/style.css" type="text/css" rel="stylesheet">
+
+    <script src="../files/all/util.js"></script>
+    <script src="../lib/jquery.pagination.js"></script>
+    <link href="../files/all/pagination.css" type="text/css" rel="stylesheet">
+    <link href="../files/user_manage/user_list/style.css" type="text/css" rel="stylesheet">
+    <script src="../files/user_manage/user_list/business.js"></script>
+</head>
+<body >
+<!-- 顶部 -->
+<div id="top">
+    <!-- 黑条 -->
+    <div style="height: 30px;background-color: black;text-align: right">
+        <!-- 登录状态 -->
+        <div id="status" style="color: white;padding: 8px">
+            管理员已登入 &nbsp;|&nbsp; <span id="logout" style="cursor: pointer;">退出</span>&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div class="box" style="height: 80px;">
+        <!-- logo -->
+        <div style="width: 200px;text-align: center;float: left;">
+            <h2 style="margin-top: 10px;margin-bottom: 0px">
+                <span style="color: crimson;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0px">book store</h3>
+        </div>
+        <!-- 导航栏 -->
+        <div style="float: left;margin-left: 150px;margin-top: 30px;">
+            <a id="home">首页</a>
+            <a id="goodsManage">商品管理</a>
+            <a id="orderManage">订单管理</a>
+            <a id="saleManage">销售量统计</a>
+            <a id="userManage">会员管理</a>
+        </div>
+    </div>
+</div>
+
+<!-- 内容 -->
+<div id="content" class="box">
+    <div style="min-height: 400px">
+        <!-- 灰条 -->
+        <div style="background-color: gainsboro;padding: 2px;padding-left: 20px;border-bottom: 1px solid grey">
+            查询结果
+        </div>
+
+        <!-- 红字 -->
+        <h4 class="bigRed">会员列表</h4>
+        <!-- 虚线 -->
+        <img class="dashed" src="../image/u41.png">
+
+        <table cellpadding="10" cellspacing="0" border="1">
+            <tr>
+                <th>会员号</th>
+                <th>用户名</th>
+                <th>会员级别</th>
+                <th>积分</th>
+                <th>注册时间</th>
+                <th>操作</th>
+            </tr>
+            <tbody id="userList"></tbody>
+        </table>
+    </div>
+
+    <!-- 翻页控件 -->
+    <div id="Pagination" class="pagination" align="center"></div>
+</div>
+
+
+
+<!-- 底部 -->
+<div id="bottom">
+    <img src="../image/u23.png" width="1000" >
+    <div style="background-color: #3e3e3e;height: 200px;margin-top: -15px;">
+        <!-- logo 邮箱 -->
+        <div style="color: white;padding-left: 150px;padding-top: 20px;">
+            <h2 style="margin-top: 10px;margin-bottom: 0">
+                <span style="color: crimson;margin-left: 10px;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0">book store</h3>
+            电子邮件：1@mail.com
+        </div>
+    </div>
+    <!-- 版权 -->
+    <div style="background-color: black;height: 40px;color: white;padding-left: 100px;padding-top: 10px">
+        版权所有 © 2017-2017，clw项目小组
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1000px;
+}
+.box{
+    border: 1px solid gray;
+}
+#top a {
+    margin: 10px;
+    cursor: pointer;
+}
+#content {
+    display: table;
+    margin-top: 10px;
+    min-height: 400px;
+    width: 1000px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+}
+#content .bigRed {
+    text-align: center;
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#content .dashed {
+    margin-left: -2px;
+    margin-bottom: 5px
+}
+#comments{
+    text-align: center;
+    padding: 10px;
+}
+#comment{
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+#grade,#character{
+    margin:25px;
+}
+
+table{
+    margin: 10px auto;
+    width: 95%;
+    border:2px solid #aaa;
+    border-collapse:collapse;
+    padding: 10px;
+}
+table tr td{
+    border: 2px solid #aaa;
+    padding: 5px;
+}
+table tbody tr td{
+    border: 2px solid #aaa;
+    padding: 5px;
+    font-size: 12px;
+}
+.pagination{
+    margin: 0 auto;
+    padding: 10px;
+}
+.content{
+    column-span: 5;
+}
+#home:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#credit_query:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#item_search:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#favorite:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#cart_list:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#trade_query:hover{
+    color:rebeccapurple;
+    text-decoration: underline;
+}
+#goods_send:hover{
+    color:rebeccapurple;
+    text-decoration: underline;
+}

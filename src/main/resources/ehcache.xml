@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--该文档用于配置EhCache-->
+<ehcache>
+    <cache name="goodsRelatedWithKeyword" maxElementsInMemory="1000"/>
+    <cache name="goodsRelatedWithPriceIntervalAndKeyword" maxElementsInMemory="1000"/>
+    <cache name="goodsRelatedWithCatalogAndKeyword" maxElementsInMemory="1000"/>
+    <cache name="goodsRelatedWithCatalogAndKeywordAndPriceInterval" maxElementsInMemory="1000"/>
+</ehcache>

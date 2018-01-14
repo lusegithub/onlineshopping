@@ -1,0 +1,10 @@
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 900px;
+    margin: 10px auto;
+    margin-bottom: 40px;
+}
+th {
+    background-color: darkgray;
+}

@@ -1,0 +1,53 @@
+#goodsList div{
+    width: 990px;
+    height: 150px;
+    float: left;
+    margin: 10px;
+    display: table;
+}
+#goodsList img{
+	width: 180px;
+	height: 180px;
+	float: left;
+	margin-left: 40px;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+#goodsList p {
+    width: 700px;
+    float: left;
+    margin: 10px;
+}
+#goodsList input[type='button']{
+	width: 100px;
+	margin-right: 50px;
+    margin-top: 10px;
+    float: left;
+}
+#pageButton input{
+    margin: 5px;
+}
+#addGoods div {
+	display: table;
+	margin-top: 10px;
+}
+.left {
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 100px;
+	text-align: right;
+}
+.middle{
+	width: 450px;
+	float: left;
+}
+.right {
+	width: 200px;
+	color: red;
+	float: left;
+}
+
+select {
+    height: 21px;
+}

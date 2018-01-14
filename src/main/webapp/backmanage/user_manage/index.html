@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员管理</title>
+    <script src="../lib/jquery-1.7.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../files/all/business.js"></script>
+    <link href="../files/all/style.css" type="text/css" rel="stylesheet">
+
+    <script src="../lib/jquery.pagination.js"></script>
+    <script src="../files/user_manage/index/business.js"></script>
+    <link href="../files/all/pagination.css" type="text/css" rel="stylesheet">
+    <link href="../files/user_manage/index/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!-- 顶部 -->
+<div id="top">
+    <!-- 黑条 -->
+    <div style="height: 30px;background-color: black;text-align: right">
+        <!-- 登录状态 -->
+        <div id="status" style="color: white;padding: 8px">
+            管理员已登入 &nbsp;|&nbsp; <span id="logout" style="cursor: pointer;">退出</span>&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div class="box" style="height: 80px;">
+        <!-- logo -->
+        <div style="width: 200px;text-align: center;float: left;">
+            <h2 style="margin-top: 10px;margin-bottom: 0px">
+                <span style="color: crimson;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0px">book store</h3>
+        </div>
+        <!-- 导航栏 -->
+        <div style="float: left;margin-left: 150px;margin-top: 30px;">
+            <a id="home">首页</a>
+            <a id="catalogManage">目录管理</a>
+            <a id="goodsManage">商品管理</a>
+            <a id="orderManage">订单管理</a>
+            <a id="saleManage">销售量统计 </a>
+            <a id="userManage">会员管理</a>
+        </div>
+    </div>
+</div>
+
+<!-- 内容 -->
+<div id="content" class="box">
+    <!-- 灰条 -->
+    <div style="background-color: gainsboro;padding: 2px;padding-left: 20px;border-bottom: 1px solid grey">
+        会员管理
+    </div>
+
+    <!-- 红字 -->
+    <h4 class="bigRed">会员级别设置</h4>
+    <!-- 虚线 -->
+    <img class="dashed" src="../image/u41.png">
+
+    <table id="levelTable" cellspacing="5" cellpadding="5px" border="1">
+        <tr>
+            <th>会员级别</th>
+            <th>积分下限</th>
+            <th>积分比例</th>
+            <th>折扣</th>
+            <th>备注</th>
+        </tr>
+        <tbody>
+        </tbody>
+    </table>
+
+    <table cellspacing="20px" style="margin-left: 50px;margin-top: 20px">
+        <tr>
+            <td>会员级别：</td>
+            <td>
+                <select id="level1" style="height: 24px;"></select>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>积分下限：</td>
+            <td>
+                <input type="text" id="lowerLimitCredit">
+            </td>
+            <td style="color: crimson;">必输项。当会员积分大于相应等级的积分下限时，会员将自动升级</td>
+        </tr>
+        <tr>
+            <td>积分比例：</td>
+            <td>
+                <input type="text" id="rateCredit"/>%
+            </td>
+            <td style="color: crimson;">必输项。会员购买物品时获得的积分占购买金额的比例</td>
+        </tr>
+        <tr>
+            <td>折 &nbsp;&nbsp;&nbsp;&nbsp; 扣：</td>
+            <td>
+                <input type="text" id="discount"/>%
+            </td>
+            <td style="color: crimson;">必输项。会员购买物品时的折扣</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" id="edit" value="修改" style="width: 100px;">
+                <input type="button" id="resetLevel" value="重置" style=" width: 100px;margin-left: 50px">
+            </td>
+        </tr>
+    </table>
+
+    <!-- 红字 -->
+    <h4 class="bigRed">会员查询</h4>
+    <!-- 虚线 -->
+    <img class="dashed" src="../image/u41.png">
+
+    <table cellspacing="20" style="margin-left: 50px">
+        <tr>
+            <td>会员号：</td>
+            <td>
+                <input id="userId" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>会员级别：</td>
+            <td>
+                <select id="level2" style="height: 24px;"></select>
+            </td>
+        </tr>
+        <tr>
+            <td>注册起始时间：</td>
+            <td>
+                <input type="date" id="beginTime">
+            </td>
+        </tr>
+        <tr>
+            <td>注册结束时间：</td>
+            <td>
+                <input type="date" id="endTime">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input id="find" type="button" value="查询" style="width: 100px;margin-right: 50px">
+                <input id="resetFind" type="button" value="重置" style="width: 100px;">
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- 底部 -->
+<div id="bottom">
+    <img src="../image/u23.png" width="1000">
+    <div style="background-color: #3e3e3e;height: 200px;margin-top: -15px;">
+        <!-- logo 邮箱 -->
+        <div style="color: white;padding-left: 150px;padding-top: 20px;">
+            <h2 style="margin-top: 10px;margin-bottom: 0">
+                <span style="color: crimson;margin-left: 10px;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0">book store</h3>
+            电子邮件：1@mail.com
+        </div>
+    </div>
+    <!-- 版权 -->
+    <div style="background-color: black;height: 40px;color: white;padding-left: 100px;padding-top: 10px">
+        版权所有 © 2017-2017，clw项目小组
+    </div>
+</div>
+</body>
+</html>

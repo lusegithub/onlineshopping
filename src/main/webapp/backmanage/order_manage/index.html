@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单管理</title>
+    <script src="../lib/jquery-1.7.1.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../files/all/business.js"></script>
+    <link href="../files/all/style.css" type="text/css" rel="stylesheet">
+    <script src="../files/order_manage/index.js"></script>
+</head>
+<body >
+<!-- 顶部 -->
+<div id="top">
+    <!-- 黑条 -->
+    <div style="height: 30px;background-color: black;text-align: right">
+        <!-- 登录状态 -->
+        <div id="status" style="color: white;padding: 8px">
+            管理员已登入 &nbsp;|&nbsp; <span id="logout" style="cursor: pointer;">退出</span>&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div class="box" style="height: 80px;">
+        <!-- logo -->
+        <div style="width: 200px;text-align: center;float: left;">
+            <h2 style="margin-top: 10px;margin-bottom: 0px">
+                <span style="color: crimson;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0px">book store</h3>
+        </div>
+        <!-- 导航栏 -->
+        <div style="float: left;margin-left: 150px;margin-top: 30px;">
+            <a id="home">首页</a>
+            <a id="catalogManage">目录管理</a>
+            <a id="goodsManage">商品管理</a>
+            <a id="orderManage">订单管理</a>
+            <a id="saleManage">销售量统计 </a>
+            <a id="userManage">会员管理</a>
+        </div>
+    </div>
+</div>
+
+<!-- 内容 -->
+<div id="content" class="box">
+    <!-- 灰条 -->
+    <div style="background-color: gainsboro;padding: 2px;padding-left: 20px;border-bottom: 1px solid grey">
+        订单管理
+    </div>
+
+    <!-- 红字 -->
+    <h4 class="bigRed">订单查询</h4>
+    <!-- 虚线 -->
+    <img class="dashed" src="../image/u41.png">
+
+    <div style="text-align: center">
+        <p>订单号 <input id="orderid" style="margin-left: 25px;width: 200px" type="text"></p>
+    </div>
+
+    <div style="text-align: center">
+        <p>客户号 <input id="userid" style="margin-left: 25px;width: 200px;" type="text"></p>
+    </div>
+
+    <div style="text-align: center">
+        <p>起始时间 <input id="start_date" style="margin-left: 10px;width: 200px;" type="date"></p>
+    </div>
+
+    <div style="text-align: center">
+        <p>截止时间 <input id="end_date" style="margin-left: 10px;width: 200px;" type="date"></p>
+    </div>
+
+    <div style="text-align: center">
+        <p>
+            <input id="query" style="margin-left: 20px;width:100px;" type="button" value="查询">
+            <input style="margin-left: 30px;width: 100px;" type="button" value="重置" id="reset">
+        </p>
+    </div>
+
+
+</div>
+
+<!-- 底部 -->
+<div id="bottom">
+    <img src="../image/u23.png" width="1000" >
+    <div style="background-color: #3e3e3e;height: 200px;margin-top: -15px;">
+        <!-- logo 邮箱 -->
+        <div style="color: white;padding-left: 150px;padding-top: 20px;">
+            <h2 style="margin-top: 10px;margin-bottom: 0">
+                <span style="color: crimson;margin-left: 10px;">i</span>smile
+            </h2>
+            <h3 style="margin-top: 0">book store</h3>
+            电子邮件：1@mail.com
+        </div>
+    </div>
+    <!-- 版权 -->
+    <div style="background-color: black;height: 40px;color: white;padding-left: 100px;padding-top: 10px">
+        版权所有 © 2017-2017，clw项目小组
+    </div>
+</div>
+</body>
+</html>

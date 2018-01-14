@@ -1,0 +1,76 @@
+body {
+    margin: 0 auto;
+    width: 1000px;
+}
+.box{
+    border: 1px solid gray;
+}
+#top a {
+    margin: 10px;
+    cursor: pointer;
+}
+#content {
+    margin-top: 10px;
+    min-height: 400px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#content .bigRed {
+    text-align: center;
+    color: crimson;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#content .dashed {
+    margin-left: -2px;
+    margin-bottom: 5px
+}
+table{
+    margin: 0 auto;
+    width: 95%;
+    border:2px solid #aaa;
+    border-collapse:collapse;
+}
+table tr td{
+    border: 2px solid #aaa;
+    padding: 5px;
+}
+#i2{
+    margin: 0 auto;
+    padding: 5px;
+}
+#page{
+    margin:0 auto;
+}
+#next{
+    padding: 3px;
+}
+
+#home:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#credit_query:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#item_search:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#favorite:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#cart_list:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+#trade_query:hover{
+    color:rebeccapurple;
+    text-decoration: underline;
+}
+#goods_send:hover{
+    color:rebeccapurple;
+    text-decoration: underline;
+}
